@@ -29,14 +29,14 @@
               "description": "NaN"
             },
             {
-              "name": "",
+              "name": "Ano",
               "type": "integer",
-              "description": ""
+              "description": "Ano da coleta de dados"
             },
             {
-              "name": "",
+              "name": "mesfim",
               "type": "integer",
-              "description": ""
+              "description": "Mês final da coleta de dados"
             },
             {
               "name": "",
