@@ -1,0 +1,226 @@
+{
+    "name": "vigitel-dados",
+    "title": "Dados Vigitel",
+    "description": " Sistema de Vigilância de Fatores de Risco para doenças crônicas não transmissíveis (DCNT) do Ministério da Saúde",
+    // "licenses": [
+    //   {
+    //     "path": "",
+    //     "title": ""
+    //   }
+    // ],
+    "keywords": [ "sus data", "vigitel", "doenças crônicas" ],
+    "version": "1.0",
+    "resources": [
+      {
+        "name": "vigitel",
+        "path": "http://svs.aids.gov.br/download/Vigitel/",
+        "description":"http://saude.gov.br/saude-de-a-z/vigitel",
+        "schema": {
+          "fields": [
+// dtypes
+            {
+              "name": "chave",
+              "type": "string",
+              "description": "Chave do banco de dados"
+            },
+            {
+              "name": "Replica",
+              "type": "integer",
+              "description": "NaN"
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            {
+              "name": "",
+              "type": "integer",
+              "description": ""
+            },
+            
+          ]
+        }
+      }
+    ]
+  }
