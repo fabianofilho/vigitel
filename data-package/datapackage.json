@@ -39,184 +39,993 @@
               "description": "Mês final da coleta de dados"
             },
             {
-              "name": "",
+              "name": "cidade",
+              "type": "string",
+              "description": "Cidade do paciente"
+            },
+            {
+              "name": "regiao",
+              "type": "string",
+              "description": "Região do paciente"
+            },
+            {
+              "name": "bairro",
+              "type": "string",
+              "description": "Bairro do paciente"
+            },
+            {
+              "name": "duracao",
               "type": "integer",
+              "description": "Duração do estudo"
+            },
+            {
+              "name": "operador",
+              "type": "string",
+              "description": "Operador da coleta de dados"
+            },
+            {
+              "name": "operadora",
+              "type": "string",
+              "description": "Operadora da coleta de dados"
+            },
+            {
+              "name": "q6",
+              "type": "integer",
+              "description": "Idade em Anos"
+            },
+            {
+              "name": "q7",
+              "type": "string",
+              "description": "Sexo",
+            },
+            {
+              "name": "civil",
+              "type": "string",
+              "description": "Estado conjugal atual"
+            },
+            {
+              "name": "q8a",
+              "type": "string",
+              "description": "Grau de Escolaridade"
+            },
+            {
+              "name": "q8b",
+              "type": "integer",
+              "description": "Série/Ano de Escolaridade"
+            },
+            {
+              "name": "q8_anos",
+              "type": "integer",
+              "description": "Anos de Escolaridade"
+            },
+            {
+              "name": "r128a",
+              "type": "Dirige",
+              "description": "Dirige sim/não"
+            },
+            {
+              "name": "q9",
+              "type": "integer",
+              "description": "Peso em kg"
+            // 777 = nao sabe e 888=não quis informar
+            },
+            {
+              "name": "q11",
+              "type": "integer",
+              "description": "Altura"
+            },
+            {
+              "name": "q14",
+              "type": "integer",
+              "description": "Gravidez sim/não"
+            },
+            {
+              "name": "q15",
+              "type": "string",
+              "description": "Frequência que come feijão"
+            },
+            {
+              "name": "q15a",
+              "type": "string",
+              "description": "Comeu feijão ontem sim/não"
+            },
+            {
+              "name": "q16",
+              "type": "string",
+              "description": "Frequência que come hortaliças"
+            },
+            {
+              "name": "q16a",
+              "type": "string",
+              "description": "Comeu hortaliças ontem sim/não"
+            },
+            {
+              "name": "q17",
+              "type": "string",
+              "description": "Frequência hortaliças cruas"
+            },
+            {
+              "name": "q18",
+              "type": "string",
+              "description": "Almoço e/ou janta hortaliças cruas"
+            },
+            {
+              "name": "q19",
+              "type": "string",
+              "description": "Frequência hortaliças cozidas"
+            },
+            {
+              "name": "q20",
+              "type": "string",
+              "description": "Almoço e/ou janta hortaliças cozidas"
+            },
+            {
+              "name": "q21",
+              "type": "string",
+              "description": "Frequência come carne"
+            },
+            {
+              "name": "q23",
+              "type": "string",
+              "description": "Freqência come frango"
+            },
+            {
+              "name": "q25",
+              "type": "string",
+              "description": "Frequência suco de frutas"
+            },
+            {
+              "name": "q26",
+              "type": "string",
+              "description": "Copos de suco"
+            },
+            {
+              "name": "q27",
+              "type": "string",
+              "description": "Frequência semanal de frutas"
+            },
+            {
+              "name": "q28",
+              "type": "string",
+              "description": "Frequência diária de frutas"
+            },
+            {
+              "name": "q28a",
+              "type": "string",
+              "description": "Comeu frutas ontem sim/não"
+            },
+            {
+              "name": "q29",
+              "type": "string",
+              "description": "Frequência semanal de refrigerante"
+            },
+            {
+              "name": "q29a",
+              "type": "string",
+              "description": "Tomou refrigerante ontem sim/não"
+            },
+            {
+              "name": "q30a",
+              "type": "string",
+              "description": "Tipo de refrigerante"
+            },
+            {
+              "name": "q31a",
+              "type": "string",
+              "description": "Copos de refrigerante/suco por dia"
+            },
+            {
+              "name": "r143a",
+              "type": "string",
+              "description": "Comeu biscoito recheado ontem sim/não"
+            },
+            {
+              "name": "r171",
+              "type": "string",
+              "description": "Comeu salgadinho ontem sim/não"
+            },
+            {
+              "name": "r172",
+              "type": "string",
+              "description": "Comeu macarrão instantâneo ontem sim/não"
+            },
+            {
+              "name": "r144a",
+              "type": "string",
+              "description": "Troca almoço por lanche sim/não"
+            },
+            {
+              "name": "r144b",
+              "type": "string",
+              "description": "Troca janta por lanche sim/não"
+            },
+            {
+              "name": "q35",
+              "type": "string",
+              "description": "Consome bebida alcoólica sim/não"
+            },
+            {
+              "name": "q36",
+              "type": "string",
+              "description": "Frequência bebida alcoólica"
+            },
+            {
+              "name": "q37",
+              "type": "string",
+              "description": "Mais de 5 doses de álcool sim/não (homem)"
+            },
+            {
+              "name": "q38",
+              "type": "string",
+              "description": "Mais de 4 doses de álcool sim/não (mucher)"
+            },
+            {
+              "name": "q39",
+              "type": "string",
+              "description": "Frequência de álcool na semana"
+            },
+            {
+              "name": "r200",
+              "type": "integer",
+              "description": "Número máximo de doses de álcool"
+            },
+            {
+              "name": "q40",
+              "type": "string",
+              "description": "Já dirigiu após beber sim/não"
+            },
+            {
+              "name": "q40b",
+              "type": "string",
+              "description": "Dirigiu depois de beber independente da quantidade"
+            },
+            {
+              "name": "q42",
+              "type": "string",
+              "description": "Faz exercício físico sim/não"
+            },
+            {
+              "name": "q43a",
+              "type": "string",
+              "description": "Categoria do exercício físico"
+            },
+            {
+              "name": "q44",
+              "type": "string",
+              "description": "Exercita pelo menos 1 vez na semana sim/não"
+            },
+            {
+              "name": "q45",
+              "type": "string",
+              "description": "Frequência dos exercícios físicos"
+            },
+            {
+              "name": "q47",
+              "type": "string",
+              "description": "Trabalha sim/não"
+            },
+            {
+              "name": "q48",
+              "type": "string",
+              "description": "Anda bastante em pé sim/não"
+            },
+            {
+              "name": "q49",
+              "type": "string",
+              "description": "Carrega peso sim/não"
+            },
+            {
+              "name": "r147",
+              "type": "string",
+              "description": "Freqência de dias que faz a atividade física"
+            },
+            {
+              "name": "q148_hh",
+              "type": "integer",
+              "description": "Tempo de duração da atividade física/horas"
+            },
+            {
+              "name": "q148_mm",
+              "type": "string",
+              "description": "Tempo de duração da atividade física/min"
+            },
+            {
+              "name": "q50",
+              "type": "string",
+              "description": "Faz trajeto a pé ou bicicleta sim/parte/não"
+            },
+            {
+              "name": "q51",
+              "type": "string",
+              "description": "Duração do trajeto diário de exercício"
+            },
+            {
+              "name": "q52",
+              "type": "string",
+              "description": "Faz curso ou escola sim/não"
+            },
+            {
+              "name": "q53",
+              "type": "string",
+              "description": "Faz trajeto para o curso ou escola a pé sim/parte/todo"
+            },
+            {
+              "name": "q54",
+              "type": "string",
+              "description": "Duração do trajeto do curso ou escola"
+            },
+            {
+              "name": "q55",
+              "type": "string",
+              "description": "Faxina em casa ou outra pessoa"
+            },
+            {
+              "name": "q56",
+              "type": "string",
+              "description": "Faz a parte pesada do trabalho em casa ou outra pessoa"
+            },
+            {
+              "name": "r149",
+              "type": "integer",
+              "description": "Faz faxina menos de uma vez por semana"
+            // 555=menos de uma vez e 888=nao quis responder
+            },
+            {
+              "name": "r150_hh",
+              "type": "integer",
+              "description": "Tempo de faxina em horas"
+            },
+            {
+              "name": "r150_mm",
+              "type": "string",
+              "description": "Tempo de faxina em minutos"
+            },
+            {
+              "name": "q59a",
+              "type": "string",
+              "description": "Horas assiste tv por dia"
+            },
+            {
+              "name": "q59b",
+              "type": "string",
+              "description": "Usa computador, tablet ou celular no tempo livre sim/não"
+            },
+            {
+              "name": "q59b",
+              "type": "string",
+              "description": "Tempo de uso dos aparelhos"
+            },
+            {
+              "name": "q60",
+              "type": "string",
+              "description": "Fumante diariamente/as vezes/não"
+            },
+            {
+              "name": "q61",
+              "type": "integer",
+              "description": "Número de cigarros diários"
+            },
+            {
+              "name": "q61a",
+              "type": "integer",
+              "description": "Número de cigarros semanal"
+            },
+            {
+              "name": "q61_fx",
+              "type": "string",
+              "description": "Cigarro diário agrupado em faixas"
+            },
+            {
+              "name": "q61a_fx",
+              "type": "string",
+              "description": "Cigarro semanal agrupado em faixas"
+            },
+            {
+              "name": "q62",
+              "type": "integer",
+              "description": "Idade de início de fumante (em anos)"
+            // 777=não lembra
+            },
+            {
+              "name": "q63",
+              "type": "string",
+              "description": "Tentou parar de fumar sim/não"
+            },
+            {
+              "name": "q64",
+              "type": "string",
+              "description": "Ex-fumante sim/não"
+            },
+            {
+              "name": "q67",
+              "type": "string",
+              "description": "Contato com fumo em casa sim/não"
+            },
+            {
+              "name": "q68",
+              "type": "string",
+              "description": "Contato com fumo no trabalho sim/não"
+            },
+            {
+              "name": "r157",
+              "type": "string",
+              "description": "Trabalha em local fechado sim/não"
+            },
+            {
+              "name": "q69",
+              "type": "string",
+              "description": "Cor da pele"
+            },
+            {
+              "name": "q69_ou",
+              "type": "string",
+              "description": "Outra cor da pele"
+            },
+            {
+              "name": "q70",
+              "type": "string",
+              "description": "Outro telefone"
+            },
+            {
+              "name": "q71",
+              "type": "string",
+              "description": "Número de telefones"
+            },
+            {
+              "name": "q74",
+              "type": "string",
+              "description": "Qualidade do estado de saúde"
+            },
+            {
+              "name": "q75",
+              "type": "string",
+              "description": "Pressão alta sim/não"
+            },
+            {
+              "name": "r203",
+              "type": "string",
+              "description": "Médico receitou medicamento para pressão alta sim/não"
+            },
+            {
+              "name": "r129",
+              "type": "string",
+              "description": "Usa medicamentos para controlar pressão"
+            },
+            {
+              "name": "r130a",
+              "type": "string",
+              "description": "Local de aquisição da medicação de pressão"
+            },
+            {
+              "name": "r174",
+              "type": "string",
+              "description": "Ficou sem medicamento nos últimos 30 dias sim/não"
+            },
+            {
+              "name": "q76",
+              "type": "string",
+              "description": "Tem diabetes sim/não"
+            },
+            {
+              "name": "r138",
+              "type": "string",
+              "description": "Diabetes na gravidês sim/não"
+            },
+            {
+              "name": "r202",
+              "type": "integer",
+              "description": "Idade de início da diabetes"
+            },
+            {
+              "name": "r204",
+              "type": "string",
+              "description": "Médico receitou tratamento para diabetes sim/não"
+            },
+            {
+              "name": "r133a",
+              "type": "string",
+              "description": "Medicamento em comprimidos para diabetes"
+            },
+            {
+              "name": "r134c",
+              "type": "string",
+              "description": "Local que consegue comprimido de diabetes"
+            },
+            {
+              "name": "d3",
+              "type": "string",
+              "description": "Ficou sem medicamento para diabetes nos últimos 30 dias sim/não"
+            },
+            {
+              "name": "r133b",
+              "type": "string",
+              "description": "Usa insulina para diabetes sim/não"
+            },
+            {
+              "name": "r134b",
+              "type": "string",
+              "description": "Local que consegue insulina para diabetes"
+            },
+            {
+              "name": "d1",
+              "type": "string",
+              "description": "Ficou sem insulina para diabetes nos últimos 30 dias sim/não"
+            },
+            {
+              "name": "q79a",
+              "type": "string",
+              "description": "Fez papanicolau sim/não"
+            },
+            {
+              "name": "q80",
+              "type": "string",
+              "description": "Tempo passado que fez papanicolau categoria em anos"
+            },
+            {
+              "name": "q81",
+              "type": "string",
+              "description": "Fez mamografia sim/não"
+            },
+            {
+              "name": "q82",
+              "type": "string",
+              "description": "Tempo passado que fez mamografia em anos"
+            },
+            {
+              "name": "q88",
+              "type": "string",
+              "description": "Possui plano de saúde sim/mais de 1/não"
+            },
+            {
+              "name": "r135",
+              "type": "string",
+              "description": "Foi multado nos últimos meses sim/não"
+            },
+            {
+              "name": "r136",
+              "type": "string",
+              "description": "Local em que foi multado nos últimos meses"
+            },
+            {
+              "name": "r153",
+              "type": "string",
+              "description": "Passou em alguma blitz sim/não"
+            },
+            {
+              "name": "r154",
+              "type": "string",
+              "description": "Parou em alguma blitz sim/não"
+            },
+            {
+              "name": "r155",
+              "type": "string",
+              "description": "Bafometro em alguma blitz sim/não"
+            },
+            {
+              "name": "r156",
+              "type": "string",
+              "description": "Bafometro positivo em alguma blitz sim/não"
+            },
+            {
+              "name": "r178",
+              "type": "string",
+              "description": "Usou celular no volante nos últimos dias sim/não"
+            },
+            {
+              "name": "r179",
+              "type": "string",
+              "description": "Possui celular sim/não"
+            },
+            {
+              "name": "r180",
+              "type": "integer",
+              "description": "Quantos celular possui"
+            },
+            {
+              "name": "r900",
+              "type": "string",
+              "description": "Recebe bolsa família sim/não"
+            },
+            {
+              "name": "obs_r900",
+              "type": "string",
+              "description": "Observações se recebe bolsa família"
+            },
+            {
+              "name": "moradores",
+              "type": "integer",
+              "description": "Número de moradores na casa"
+            },
+            {
+              "name": "adultos",
+              "type": "integer",
+              "description": "Número de adultos na casa"
+            },
+            {
+              "name": "obs",
+              "type": "string",
+              "description": "Observações"
+            },
+            {
+              "name": "fet",
+              "type": "string",
+              "description": "Faixa etária do paciente"
+            },
+            {
+              "name": "cat_esc",
+              "type": "string",
+              "description": "Categoria idade/sexo para escolaridade"
+            },
+            {
+              "name": "fesc",
+              "type": "string",
+              "description": "Faixa por anos de escolaridade"
+            },
+            {
+              "name": "fxesc",
+              "type": "string",
+              "description": "Faixa de escolaridade (RAKE)"
+            },
+            {
+              "name": "pesorake",
+              "type": "integer",
+              "description": "Peso RAKE"
+            },
+            {
+              "name": "q9_i",
+              "type": "integer",
+              "description": "Peso em kg"
+            },
+            {
+              "name": "q11_o",
+              "type": "integer",
+              "description": "Altura em cm"
+            },
+            {
+              "name": "pinterno",
+              "type": "float",
+              "description": "Não consta"
+            },
+            {
+              "name": "q59a_horas",
+              "type": "float",
+              "description": "Horas que assite TV/dia"
+            },
+            {
+              "name": "q59c_horas",
+              "type": "float",
+              "description": "Horas que fica no computador, tablet ou celular em média"
+            },
+// indicadores a partir daqui            
+            {
+              "name": "fumante",
+              "type": "string",
+              "description": "Fumante sim/não"
+            },
+            {
+              "name": "exfuma",
+              "type": "string",
+              "description": "Ex-fumante sim/não"
+            },
+            {
+              "name": "mais20",
+              "type": "string",
+              "description": "Consome 20 ou mais cigarros ao dia sim/não"
+            },
+            {
+              "name": "fumocasa",
+              "type": "string",
+              "description": "Fumantes passivos em casa sim/não"
+            },
+            {
+              "name": "fumotrab",
+              "type": "string",
+              "description": "Fumantes passivos no trabalho sim/não"
+            },
+            {
+              "name": "imc",
+              "type": "float",
+              "description": "Valor do Índice de Massa Corporal (IMC)"
+            },
+            {
+              "name": "imc_i",
+              "type": "string",
+              "description": "IMC com imputações"
+            },
+            {
+              "name": "excpeso",
+              "type": "string",
+              "description": "Excesso de peso sim/não"
+            },
+            {
+              "name": "excpeso_i",
+              "type": "string",
+              "description": "Excesso de peso com imputações sim/não"
+            },
+            {
+              "name": "obesid",
+              "type": "string",
+              "description": "Obesidade sim/não"
+            },
+            {
+              "name": "obesit_i",
+              "type": "string",
+              "description": "Obesidade com imputações sim/não"
+            },
+            {
+              "name": "hortareg",
+              "type": "string",
+              "description": "Hortaliças consumo regular (5x ou mais/sem) sim/não"
+            },
+            {
+              "name": "frutareg",
+              "type": "string",
+              "description": "Frutas consumo regular (5x ou mais/sem) sim/não"
+            },
+            {
+              "name": "flvreg",
+              "type": "string",
+              "description": "Consumo regular de frutas E hortaliças (5x ou mais/Sem) sim/não"
+            },
+            {
+              "name": "cruadia",
+              "type": "integer",
+              "description": "Contagem de hortaliças cruas/ dia"
+            },
+            {
+              "name": "cozidadia",
+              "type": "integer",
+              "description": "Contagem de hortaliças cozidas/ dia"
+            },
+            {
+              "name": "hortadia",
+              "type": "string",
+              "description": "Contagem de hortaliças/ dia"
+            },
+            {
+              "name": "sucodia",
+              "type": "string",
+              "description": "Contagem suco/ dia - Máx. 1/dia"
+            },
+            {
+              "name": "sofrutadia",
+              "type": "integer",
+              "description": "Contagem fruta/ dia - Sem suco"
+            },
+            {
+              "name": "frutadia",
+              "type": "integer",
+              "description": "Contagem fruta TOTAL/ dia"
+            },
+            {
+              "name": "flvdia",
+              "type": "integer",
+              "description": "Contagem fruta e hortaliça TOTAL/ dia"
+            },
+            {
+              "name": "flvreco",
+              "type": "string",
+              "description": "Consumo recomendado de frutas e hortaliças sim/não"
+            },
+            {
+              "name": "refritl5",
+              "type": "string",
+              "description": "Consumo regular de refrigerantes (5x ou mais/Sem) sim/não"
+            },
+            {
+              "name": "feijao5",
+              "type": "string",
+              "description": "Consumo regular de feijao(5x ou mais/Sem) sim/não"
+            },
+            {
+              "name": "lanche_7",
+              "type": "string",
+              "description": "Hábito de substituir as refeições principais por lanche com regularidade(7x ou mais)"
+            },
+            {
+              "name": "af",
+              "type": "string",
+              "description": " Tipo atv. fis. no tempo livre (lazer)"
+            },
+            {
+              "name": "freq",
+              "type": "string",
+              "description": "Frequencia de realizacao de atv. fis. no tempo livre (lazer)"
+            },
+            {
+              "name": "time",
+              "type": "string",
+              "description": "Tempo de realizacao de atv. fis. no tempo livre (lazer)"
+            },
+            {
+              "name": "ati_livre ",
+              "type": "string",
+              "description": "Tipo de atividade física x Frequência x Tempo"
+            },
+            {
+              "name": "ativo_livre",
+              "type": "string",
+              "description": "Atividade física suficiente no lazer - SOMENTE TEMPO/ SEM FREQUENCIA (a partir de 2012)"
+            },
+            {
+              "name": "atitrans",
+              "type": "string",
+              "description": "Atividade fisica no deslocamento"
+            },
+            {
+              "name": "atidom",
+              "type": "string",
+              "description": "Atividade fisica no trabalho domestico sim/não"
+            },
+            {
+              "name": "atiocu",
+              "type": "string",
+              "description": "Atividade fisica no trabalho sim/não"
+            },
+            {
+              "name": "inativo",
+              "type": "string",
+              "description": "Inatividade fisica sim/não"
+            },
+            {
+              "name": "q51medio",
+              "type": "float",
+              "description": "Duração diária do deslocamento para trabalho (min)"
+            },
+            {
+              "name": "q54medio",
+              "type": "float",
+              "description": "Duração diária do deslocamento para o escola (min)"
+            },
+            {
+              "name": "deslocdia",
+              "type": "float",
+              "description": "Duração diária do deslocamento para o trabalho e escola (min)"
+            },
+            {
+              "name": "deslocsemana",
+              "type": "float",
+              "description": "Duração semanal do deslocamento para o trabalho e escola (min)"
+            },
+            {
+              "name": "atiocusemana",
+              "type": "float",
+              "description": "Duração semanal da atividade física laboral (min)"
+            },
+            {
+              "name": "faxinasemana ",
+              "type": "float",
+              "description": "Duração semanal da atividade física doméstica(min)"
+            },
+            {
+              "name": "af3dominios",
+              "type": "float",
+              "description": "Atividade física >= 150min/sem em 3 domínios"
+            },
+            {
+              "name": "tv_d_3",
+              "type": "string",
+              "description": "Hábito de assistir TV - 3hrs por dia sim/não"
+            },
+            {
+              "name": "tempo_tela_stv",
+              "type": "string",
+              "description": "Tempo de tela (não TV) - 3hrs por dia sim/não"
+            },
+            {
+              "name": "tempo_tela_total",
+              "type": "string",
+              "description": "Tempo de tela (TOTAL) - 3hrs por dia sim/não"
+            },
+            {
+              "name": "alcabu",
+              "type": "string",
+              "description": "Consumo abusivo de alcool sim/não"
+            },
+            {
+              "name": "direcao",
+              "type": "string",
+              "description": "Condução de veículo após consumo ABUSIVO de bebida alcoólica sim/não"
+            },
+            {
+              "name": "direcao_alc",
+              "type": "string",
+              "description": "Condução de veículo após consumo bebida alcoólica sim/não"
+            },
+            {
+              "name": "saruim",
+              "type": "string",
+              "description": "Avaliação ruim da condição de saúde sim/não"
+            },
+            {
+              "name": "iddmamo",
+              "type": "string",
+              "description": "Faixas de idade alvo para mamografia sim/não"
+            },
+            {
+              "name": "mamo",
+              "type": "string",
+              "description": "Mamografia sim/não"
+            },
+            {
+              "name": "mamodois",
+              "type": "string",
+              "description": "Mamografia nos últimos dois anos sim/não"
+            },
+            {
+              "name": "iddpapa_old",
+              "type": "integer",
+              "description": "Idade (anos) em que fez papanicolau"
+            },
+            {
+              "name": "iddpapa",
+              "type": "string",
+              "description": "Faixas de idade alvo para papanicolau"
+            },
+            {
+              "name": "papa",
+              "type": "string",
+              "description": "Fez papanicolau sim/não"
+            },
+            {
+              "name": "papatres",
+              "type": "string",
+              "description": "Papanicolau nos últimos três anos sim/não"
+            },
+            {
+              "name": "hart",
+              "type": "string",
+              "description": "Hipertensao arterial sim/não"
+            },
+            {
+              "name": "diab",
+              "type": "string",
+              "description": "Diabetes sim/não"
+            },
+            {
+              "name": "has",
+              "type": "string",
+              "description": "Indicação médica (HAS) sim/não"
+            },
+            {
+              "name": "med_has",
+              "type": "string",
+              "description": "Uso de medicamento (HAS)"
+            },
+            {
+              "name": "trat_med_has",
+              "type": "string",
+              "description": "Hipertensos em tratamento medicamentoso"
+            },
+            {
+              "name": "db",
+              "type": "string",
               "description": ""
             },
             {
               "name": "",
-              "type": "integer",
-              "description": ""
+              "type": "string",
+              "description": "Diabetes"
             },
             {
-              "name": "",
-              "type": "integer",
-              "description": ""
+              "name": "ind_med_db",
+              "type": "string",
+              "description": "Indicação médica (DB)"
             },
             {
-              "name": "",
-              "type": "integer",
-              "description": ""
+              "name": "med_db",
+              "type": "string",
+              "description": "Uso de medicamento (DB)"
             },
             {
-              "name": "",
-              "type": "integer",
-              "description": ""
+              "name": "insulina",
+              "type": "string",
+              "description": "Uso de insulina"
             },
             {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
-            },
-            {
-              "name": "",
-              "type": "integer",
-              "description": ""
+              "name": "trat_med_db",
+              "type": "string",
+              "description": "Diabéticos em tratamento medicamentoso"
             },
             
           ]
