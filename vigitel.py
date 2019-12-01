@@ -39,7 +39,6 @@ from sklearn.model_selection import cross_val_score
 #import shap
 # from interpret.glassbox import ExplainableBoostingClassifier
 
-
 st.title('Algorítmo Vigitel Predição de Diabetes')
 
 ########## READ DATA ##########
@@ -535,7 +534,7 @@ def neuralNet(X_train, X_test, y_train, y_test):
 
 # Choose how you want to analyse
 choose_analysis = st.sidebar.selectbox("Escolha sua análise",
-			   ["Nada por enquanto", "Visualização dos dados", "Seleção de Características", "Predição do SINASC atual", "Preenchimento de um novo formulário Vigitel", "Explicação dos modelos"])
+			   ["Nada por enquanto", "Visualização dos dados", "Seleção de Características", "Predição do Vigitel atual", "Preenchimento de um novo formulário Vigitel", "Explicação dos modelos"])
 
 # Choose your machine learning model
 choose_model = st.sidebar.selectbox("Escolha seu modelo",
