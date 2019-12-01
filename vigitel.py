@@ -12,6 +12,9 @@ import pandas as pd
 import numpy as np 
 ##import pandas_profiling as pf
 
+#datapackage
+# from datapackage import Package
+
 #preprocessing
 from sklearn.utils import shuffle
 from sklearn.model_selection import train_test_split
@@ -37,18 +40,12 @@ from sklearn.model_selection import cross_val_score
 # from interpret.glassbox import ExplainableBoostingClassifier
 
 
-st.title('Algorítmo blue Predição de Diabetes')
+st.title('Algorítmo Vigitel Predição de Diabetes')
 
 ########## READ DATA ##########
 FILENAME = '/Users/fabianofilho/Projects/vigitel/data/all2006.csv'
-
-@st.cache(suppress_st_warning=True)
-def loadData():
-    nan=['555', '777', '888',
-          555, 777, 888,
-         'NaN', 0, 'nan', 'na']
-    #dict
-    dtypes = {
+NAN=['555', '777', '888',555, 777, 888,'NaN', 0, 'nan', 'na']
+dtypes = {
     #Variable name	Type
     'chave':	np.object,
     'replica':	np.float64,
@@ -260,54 +257,33 @@ def loadData():
     'trat_med_db':	np.object
     }
 
-	dfi_raw = pd.read_csv(FILENAME, dtype=dtypes, na_values=nan)
+@st.cache(suppress_st_warning=True)
+def loadData():
+    dfi_raw = pd.read_csv(FILENAME, dtype=dtypes, na_values=NAN)
+    df1 = pd.read_csv('data/all2007.csv', dtype=dtypes,na_values=NAN)
+    df2 = pd.read_csv('data/all2008.csv', dtype=dtypes,na_values=NAN)
+    df3 = pd.read_csv('data/all2009.csv', dtype=dtypes,na_values=NAN)
+    df4 = pd.read_csv('data/all2010.csv', dtype=dtypes,na_values=NAN)
+    df5 = pd.read_csv('data/all2011.csv', dtype=dtypes,na_values=NAN)
+    df6 = pd.read_csv('data/all2012.csv', dtype=dtypes,na_values=NAN)
+    df7 = pd.read_csv('data/all2013.csv', dtype=dtypes,na_values=NAN)
+    df8 = pd.read_csv('data/all2014.csv', dtype=dtypes,na_values=NAN)
+    df9 = pd.read_csv('data/all2015.csv', dtype=dtypes,na_values=NAN)
+    df10 = pd.read_csv('data/all2016.csv', dtype=dtypes, na_values=NAN)
+    df11 = pd.read_csv('data/all2017.csv', dtype=dtypes,na_values=NAN)
+    return dfi_raw, df1, df2, df3, df4, df5, df6, df7, df8, df9, df10, df11
 
-    df1 = pd.read_csv('data/all2007.csv', 
-                  dtype=dtypes,
-                  na_values=nan)
-    df2 = pd.read_csv('data/all2008.csv', 
-                    dtype=dtypes,
-                    na_values=nan)
-    df3 = pd.read_csv('data/all2009.csv', 
-                    dtype=dtypes,
-                    na_values=nan)
-    df4 = pd.read_csv('data/all2010.csv', 
-                    dtype=dtypes,
-                    na_values=nan)
-    df5 = pd.read_csv('data/all2011.csv', 
-                    dtype=dtypes,
-                    na_values=nan)
-    df6 = pd.read_csv('data/all2012.csv', 
-                    dtype=dtypes,
-                    na_values=nan)
-    df7 = pd.read_csv('data/all2013.csv', 
-                    dtype=dtypes,
-                    na_values=nan)
-    df8 = pd.read_csv('data/all2014.csv', 
-                    dtype=dtypes,
-                    na_values=nan)
-    df9 = pd.read_csv('data/all2015.csv', 
-                    dtype=dtypes,
-                    na_values=nan)
-    df10 = pd.read_csv('data/all2016.csv', 
-                    dtype=dtypes,
-                    na_values=nan)
-    df11 = pd.read_csv('data/all2017.csv', 
-                    dtype=dtypes,
-                    na_values=nan)
-	return dfi_raw, df1, df2, df3, df4, df5, df6, df7, df8, df9, df10, df11
-
-data = loadData()
+dfi_raw, df1, df2, df3, df4, df5, df6, df7, df8, df9, df10, df11 = loadData()
 
 ########## SHOW YOUR DATA #########
 if st.checkbox('Dados Vigitel'):
 	st.subheader("Sistema de Vigilância de Fatores de Risco para doenças crônicas não transmissíveis (DCNT) do Ministério da Saúde")
 	st.text('Download: http://svs.aids.gov.br/download/Vigitel/')
-	st.write(data.head())
+	st.write(dfi_raw.head())
 
 @st.cache
 # Basic and common preprocessing required for all the models.
-def preprocessing(data):
+def preprocessing(dfi_raw, df1, df2, df3, df4, df5, df6, df7, df8, df9, df10, df11):
 
     #drop repetitive cols
     cols = ['fumante',
@@ -465,9 +441,9 @@ def preprocessing(data):
    
     #separando treino e teste com 70% treino 30% teste
     X_train, X_test, y_train, y_test = train_test_split(X_sm,y_sm, test_size=0.3,random_state=42)
-	return X_sm, y_sm, X_train, X_test, y_train, y_test
+    return X_sm, y_sm, X_train, X_test, y_train, y_test
 
-X_sm, y_sm, X_train, X_test, y_train, y_test = preprocessing(data)
+X_sm, y_sm, X_train, X_test, y_train, y_test = preprocessing(dfi_raw, df1, df2, df3, df4, df5, df6, df7, df8, df9, df10, df11)
 
 
 ### Accepting user data for predicting its Member Type
@@ -559,7 +535,7 @@ def neuralNet(X_train, X_test, y_train, y_test):
 
 # Choose how you want to analyse
 choose_analysis = st.sidebar.selectbox("Escolha sua análise",
-			   ["Nada por enquanto", 'Visualização dos dados', 'Seleção de Características', 'Predição do SINASC atual", "Preenchimento de um novo formulário Vigitel",'Explicação dos modelos'])
+			   ["Nada por enquanto", "Visualização dos dados", "Seleção de Características", "Predição do SINASC atual", "Preenchimento de um novo formulário Vigitel", "Explicação dos modelos"])
 
 # Choose your machine learning model
 choose_model = st.sidebar.selectbox("Escolha seu modelo",
