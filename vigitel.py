@@ -32,6 +32,10 @@ from mlxtend.feature_selection import SequentialFeatureSelector as SFS
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.model_selection import cross_val_score
 
+#explainable models
+#import shap
+# from interpret.glassbox import ExplainableBoostingClassifier
+
 
 st.title('Algorítmo blue Predição de Diabetes')
 
@@ -257,7 +261,7 @@ def loadData():
     }
 
 	dfi_raw = pd.read_csv(FILENAME, dtype=dtypes, na_values=nan)
-    
+
     df1 = pd.read_csv('data/all2007.csv', 
                   dtype=dtypes,
                   na_values=nan)
@@ -760,5 +764,18 @@ if choose_analysis == 'Predição do VIGITEL atual':
 #SHAP ou interpretML
 
 #   ################# SHAP ################
+# j = 0
+# # initialize js for SHAP
+# shap.initjs()
+# explainer = shap.TreeExplainer(xg)
+# shap_values = explainer.shap_values(X_sm)
+# shap.summary_plot(shap_values, X_sm)
+# shap.summary_plot(shap_values, X_sm, plot_type="bar")
 
 #   ############ INTERPRETML ##############
+# ebm = ExplainableBoostingClassifier(feature_names=X.columns)
+# ebm.fit(X_train, y_train)
+# from interpret import show
+
+# ebm_global = ebm.explain_global()
+# show(ebm_global)
