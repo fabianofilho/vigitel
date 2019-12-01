@@ -259,6 +259,7 @@ dtypes = {
 @st.cache(suppress_st_warning=True)
 def loadData():
     dfi_raw = pd.read_csv(FILENAME, dtype=dtypes, na_values=NAN)
+    data = pd.read_csv('data/all.csv', dtype=dtypes,na_values=NAN)
     df1 = pd.read_csv('data/all2007.csv', dtype=dtypes,na_values=NAN)
     df2 = pd.read_csv('data/all2008.csv', dtype=dtypes,na_values=NAN)
     df3 = pd.read_csv('data/all2009.csv', dtype=dtypes,na_values=NAN)
@@ -270,9 +271,9 @@ def loadData():
     df9 = pd.read_csv('data/all2015.csv', dtype=dtypes,na_values=NAN)
     df10 = pd.read_csv('data/all2016.csv', dtype=dtypes, na_values=NAN)
     df11 = pd.read_csv('data/all2017.csv', dtype=dtypes,na_values=NAN)
-    return dfi_raw, df1, df2, df3, df4, df5, df6, df7, df8, df9, df10, df11
+    return dfi_raw, data, df1, df2, df3, df4, df5, df6, df7, df8, df9, df10, df11
 
-dfi_raw, df1, df2, df3, df4, df5, df6, df7, df8, df9, df10, df11 = loadData()
+dfi_raw, data, df1, df2, df3, df4, df5, df6, df7, df8, df9, df10, df11 = loadData()
 
 ########## SHOW YOUR DATA #########
 if st.checkbox('Dados Vigitel'):
@@ -544,6 +545,18 @@ if choose_analysis == "Nada por enquanto":
 		st.write(" ")
 		st.write("Podemos começar escolhendo uma forma de análise")
 
+####### VISUALIZAÇÃO #####
+# Visualização dos dados
+if choose_analysis == 'Visualização dos dados':
+	######### CODMUN ##########
+	codmun = st.selectbox('Selecionar o Município', data.cidade.unique(),1)
+	ano = st.slider('Selecionar o Ano', 2006,2017,0,1)
+	data = data[data['cidade']==codmun]
+	st.bar_chart(data['class_0'])
+	#map??
+
+
+######## PREDIÇÃO ######
 # Predição de todo o banco de dados
 if choose_analysis == 'Predição do VIGITEL atual':
 	# NONE 
