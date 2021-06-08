@@ -27,7 +27,7 @@ numpy      ==  1.16.5
 openpyxl   ==  2.6.4  
 pandas     ==  0.24.2 
 pathtools  ==  0.1.2  
-Pillow     ==  6.2.1  
+Pillow     == 8.2.0  
 protobuf   ==  3.11.0 
 pytz       ==  2019.3 
 requests   ==  2.22.0 
